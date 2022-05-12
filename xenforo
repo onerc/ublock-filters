@@ -1,0 +1,30 @@
+!removing messages and topics sent by members of moderation team
+##div[data-author="USERNAME"]
+##article[data-author="USERNAME"]
+
+!removing blog, resources, online members and share page boxes
+##div[data-widget-key="latest_blog_entries"]
+##div[data-widget-key="xfrm_forum_overview_new_resources"]
+##div[data-widget-key="forum_overview_members_online"]
+##div[data-widget-key="forum_overview_share_page"]
+
+!removing top bar
+!##div[class="p-body-header"]
+
+!removing top menu(experimental)
+##nav[class="focus-wrap-nav"]
+
+!removing bottom bar
+##div[class="blockMessage blockMessage--none"]
+
+!removing user stats/info
+##div[class="message-userExtras"]
+
+!removing user title
+##h5[class="userTitle message-userTitle"]
+
+!removing threads with a specific topic
+URL##div:has( > div > div > ul > li > a:has-text(TOPIC))
+
+!removing reactions bar
+##div[class="reactionsBar js-reactionsList is-active"]
