@@ -28,3 +28,6 @@ URL##div:has( > div > div > ul > li > a:has-text(TOPIC))
 
 !removing reactions bar
 ##div[class="reactionsBar js-reactionsList is-active"]
+
+!disabling shortcuts
+##a:remove-attr(data-xf-key)
